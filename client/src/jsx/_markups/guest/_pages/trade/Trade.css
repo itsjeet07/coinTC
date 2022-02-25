@@ -1,0 +1,134 @@
+.Trade .btn-ref {
+    background-color: #FFC700;
+    color: #4E4E4E;
+}
+
+.Trade .buy-sell-tab {
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    padding: 3px 5px;
+}
+
+.Trade .buy-sell-tab .nav-item.show .nav-link, .Trade .buy-sell-tab .nav-link.active {
+    background-color: #0059FF !important; 
+    color: #FFF !important;
+    border-bottom: 0 !important;
+}
+
+.Trade  .buy-sell-tab .nav-link {
+    padding: 7px 30px !important;
+    border-radius: 6px;
+}
+.Trade .btn-ref-my-modal {
+    background-color: #CCCCEE;
+  }
+  
+  .Trade .text-light-gray {
+    color: #6F6F6F;
+  }
+  
+  .Trade .text-black {
+    color: #000000 !important;
+  }
+  
+  .Trade .my-input {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .Trade .text-light-blue {
+    color: #00b1cf;
+  }
+  
+  .Trade .btn-outline-limited {
+    border:1px solid #787878;
+    color: #000000;
+    background-color: #ECECEC;
+  }
+  
+  .Trade .my-circle {
+    color: #3B3B3B !important;
+  }
+
+  /*--------NEW CSS--------*/
+
+
+.trd-sub-txt
+{
+  font-size: 12px;
+}
+.trd-avl
+{
+  font-size: 16px;
+  font-weight: 500;
+}
+.pd-txt
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.txt-avls
+{
+  font-size: 16px;
+}
+.tr-ft
+{
+  padding: 10px 0 10px 7px !important;
+}
+
+
+ .tooltip-bank-transfer .tooltip-inner {
+  background-color: #F1F1FF;
+  border: 1px solid #707075;  
+  opacity: 1 !important;
+  color: #000;
+}
+
+.tooltip-bank-transfer.bs-tooltip-bottom .arrow::before, .tooltip-bank-transfer.bs-tooltip-auto[x-placement^="bottom"] .arrow::before{
+  border-bottom-color: #F1F1FF;
+}
+
+
+.scroll-area-sm 
+{
+    height: 275px;
+    overflow-x: hidden
+}
+.pay-menus .dropdown-menu
+{
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.md-head
+{
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 5px;
+}
+.md-dt-txt
+{
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+.btn-cans
+{
+  background-color: #CCCCEE;
+    color: #000000;
+}
+
+.crypt{
+  padding-left: 7px
+}
+.new_buy_btc{
+  background-color: #0059FF !important; 
+  color: #FFF !important;
+  width: 100px;
+  border: none;
+  /* font-weight: bold; */
+  font-size: 14px;
+  height: 40px;
+  border-radius: 7px;
+}

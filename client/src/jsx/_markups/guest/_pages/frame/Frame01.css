@@ -1,0 +1,42 @@
+.all-payment-body tr .orange h5:after,
+.all-payment-body tr .light-green h5:after,
+.all-payment-body tr .dark-green h5:after,
+.all-payment-body tr .red h5:after,
+.all-payment-body tr .green h5:after,
+.all-payment-body tr .blue h5:after {
+    content: "";
+    background-color: #E57E33;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    width: 4px;
+    height: 20px;
+}
+
+.all-payment-body tr .light-green h5:after{
+    background-color: #19D26E !important;
+}
+.all-payment-body tr .dark-green h5:after
+{
+    background-color: #05606C !important;
+}
+.all-payment-body tr .red h5:after
+{
+    background-color: #FF3B10 !important;
+}
+.all-payment-body tr .green h5:after
+{
+    background-color: #0F984E !important;
+}
+.all-payment-body tr .blue h5:after{
+    background-color: #188BF5 !important;
+}
+
+.all-payment-body tr td, 
+.all-payment-body tr td, 
+.all-payment-body tr td, 
+.all-payment-body tr td, 
+.all-payment-body tr td, 
+.all-payment-body tr td {
+    left: 20px;
+}

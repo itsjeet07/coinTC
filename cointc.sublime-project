@@ -1,0 +1,30 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+		}
+	],
+	"debugger_configurations":
+	[
+    {
+      "command": "yarn dev",
+      "name": "Debug: server",
+      "request": "launch",
+      "type": "node",
+      "cwd": "${workspaceFolder}/server",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "command": "yarn dev",
+      "name": "Debug: client",
+      "request": "attach",
+      "type": "firefox",
+      "cwd": "${workspaceFolder}/client",
+      
+    },
+  ]
+}

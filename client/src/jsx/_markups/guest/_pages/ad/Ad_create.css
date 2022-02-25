@@ -1,0 +1,169 @@
+.Ad_create #myProgress {
+  width: 100px;
+  background-color: grey;
+}
+
+.Ad_create #myBar {
+  width: 0%;
+  height: 5px;
+  background-color: green;
+}
+
+.Ad_create .sell-buy .nav-item {
+  width: 50%;
+  border-radius: 0px;
+}
+
+.Ad_create .text-black {
+  color: #000 !important;
+}
+
+.Ad_create .sell-buy {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.55);
+}
+
+.Ad_create .sell-buy .nav-item.active {
+  background-color: #C4C4C4;
+}
+
+.Ad_create .px-15 {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.Ad_create .left-bn,.right-bn {
+  border: 1px solid #8B8B8B;
+  border-radius: 0 !important;
+  background-color: #FFF !important;
+}
+
+.Ad_create .dropdown-menu.show {
+  width: 100%;
+}
+
+.Ad_create .text-cny {
+  color: #005A9B;
+}
+
+.Ad_create .mpq .form-group {
+  margin-bottom: 10px !important;
+}
+
+.Ad_create .pmt .form-control {
+  border-right: none !important;
+}
+
+::-webkit-input-placeholder { 
+  color: #000 !important;
+  font-weight: 500 !important; 
+}
+
+:-moz-placeholder { 
+  color: #000 !important;
+  font-weight: 500 !important; 
+}
+
+::-moz-placeholder { 
+  color: #000 !important;
+  font-weight: 500 !important; 
+}
+
+:-ms-input-placeholder { 
+  color: #000 !important;
+  font-weight: 500 !important; 
+}
+
+.Ad_create .input-right .input-group-text {
+  background-color: transparent !important;
+  border-left: none !important;
+  font-weight: 500 !important;
+  color: #000 !important;
+}
+
+.Ad_create .next-bn {
+  background-color: #0059FF !important;
+  color: #FFF !important;
+  font-weight: bold;
+  border-radius: 0 !important;
+  border-radius: 6px !important;
+}
+.my-dropdown-toggle .dropdown-toggle::after {
+  position: absolute !important;
+  right: 10% !important;
+  top: 40% !important;
+}
+
+.pmt .input-group-prepend .input-group-text {
+  background-color: transparent !important;
+  border: 1px solid #8B8B8B !important;
+}
+
+#createAd select#fiat-currencies, #createAd select#crypto-currencies{  
+  width: 100%;
+  height:35px;
+  border:1px solid transparent;
+  align-items: center;
+  cursor:pointer;
+  padding:0 10px;
+  border: 1px solid #8B8B8B;
+}
+#createAd select#fiat-currencies:focus, #createAd select#crypto-currencies:focus{ 
+  box-shadow: none;
+  outline: 0 solid transparent;
+}
+
+
+/*Timline*/
+
+
+.my-timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+  counter-reset: step;
+}
+
+.my-timeline li {
+  float: left;    
+  text-align: center;
+  width: 215px;   
+  position: relative;  
+}
+
+.my-timeline li:before {
+  content: counter(step);
+  counter-increment: step;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 100%;
+  background-color: #686A71 !important;
+  margin: 0 auto 15px auto;
+  color: #FFFFFF;
+}
+
+.my-timeline li:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #DDD;
+  display: block;
+  position: absolute;
+  color: #000000;
+  top: 17.5px;
+  left: 50%;
+  z-index: -1;
+}
+
+.my-timeline li:last-child:after {
+  content: none;
+}
+
+.my-timeline .active:before {
+  background-color: #0059FF !important;  
+}
+.my-timeline li:first-child:after {
+  background: #C4C4C4;  
+}

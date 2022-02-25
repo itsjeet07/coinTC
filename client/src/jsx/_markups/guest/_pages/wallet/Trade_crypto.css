@@ -1,0 +1,21 @@
+.Trade_crypto .btn-ref {
+    background-color: #FFC700;
+    color: #4E4E4E;
+}
+
+.Trade_crypto .buy-sell-tab {
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    padding: 3px 5px;
+}
+
+.Trade_crypto .buy-sell-tab .nav-item.show .nav-link, .Trade_crypto .buy-sell-tab .nav-link.active {
+    background-color: #0059FF !important; 
+    color: #FFF !important;
+    border-bottom: 0 !important;
+}
+
+.Trade_crypto .buy-sell-tab .nav-link {
+    padding: 7px 30px !important;
+    border-radius: 6px;
+}

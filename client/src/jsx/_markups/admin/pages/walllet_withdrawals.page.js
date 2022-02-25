@@ -1,0 +1,110 @@
+import { Card, Row, Col, Button, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import PageTitle from "../layouts/PageTitle";
+import Moment from "react-moment";
+import { useEffect } from "react";
+// CONSTANTS
+import { SERVICE } from "../../../_constants";
+
+import useToggler from "../../../_hooks/toggler.hook";
+import TableGenerator from "../components/tableGenerator.component";
+import { useTranslation } from 'react-i18next'
+function Withdrawals({ services, useService }) {
+
+  const { t } = useTranslation()
+  const {
+    isOpen: isModalOpen,
+    onOpen: onOpenModal,
+    onClose: onModalClose,
+  } = useToggler();
+
+  return (
+    <>
+      <PageTitle activeMenu="Withdrawals" motherMenu="Wallet management" />
+      <header className="mb-4">
+        <h3>{t("Withdrawals details")}</h3>
+      </header>
+      <Row style={{ marginBottom: 20, width: "100%" }}>
+        <Col>
+          <div className="input-group search-area right d-lg-inline-flex d-none">
+            <input
+              type="text"
+              className="form-control"
+              placeholder={t("Filter in record")}
+            />
+            <div className="input-group-append">
+              <span className="input-group-text">
+                <Link to={"#"}>
+                  <i className="themify-glyph-162"></i>
+                </Link>
+              </span>
+            </div>
+          </div>
+        </Col>
+        <Col sm="auto" style={{ padding: 0 }}></Col>
+      </Row>
+
+      <div style={{ marginBottom: 60 }}>
+        <WithdrawalHistoryTable {...{ services, useService }} />
+      </div>
+    </>
+  );
+}
+function WithdrawalHistoryTable({ services, useService }) {
+  const { wallet } = services;
+
+  let service = useService({
+    [SERVICE?.BULK_RETRIEVE]: wallet.find,
+  });
+  let { data, error, isFetching, dispatchRequest } = service;
+
+  useEffect(() => {
+    dispatchRequest({
+      type: SERVICE?.BULK_RETRIEVE,
+      payload: {
+        type: "withdrawals",
+        fake: true,
+        sudo: true,
+      },
+    });
+  }, []);
+  const action = (
+    <div className="d-flex" style={{ gap: 20 }}>
+      <a href="">
+        <span className="themify-glyph-165"></span> Delete
+      </a>
+    </div>
+  );
+  return (
+    <>
+      <div style={{ marginBottom: 60 }}>
+        <TableGenerator
+          {...{ service }}
+          omit="*"
+          extras={[
+            "email",
+            "currency",
+            "fees",
+            "status",
+            "amount",
+            "date" /* , "status", "action" */,
+          ]}
+          transformers={{
+            email: ({ row }) => (row?.user?.email),
+            currency: ({ row }) => row?.currency,
+            fees: ({ row }) => row?.fees,
+            amount: ({ row }) => row?.amount,
+            status: ({ row }) =>
+              row?.status,
+            date: ({ row }) => (
+              <Moment format="YYYY/MM/DD" date={row?.createdAt} />
+            ),
+            // action: ({ row }) => row?.status || "",
+          }}
+        />
+      </div>
+    </>
+  );
+}
+
+export default Withdrawals;

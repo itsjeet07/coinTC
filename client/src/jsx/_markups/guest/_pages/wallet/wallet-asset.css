@@ -1,0 +1,286 @@
+#cointcNav ul .wallet .active {
+    color: #85C4F9 !important;
+}
+
+#progress,#asset {
+    margin: 50px 0;
+}
+
+#progress .row , #asset .row{
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.progress-top ul li {
+    list-style: inside;
+    color: #000000;
+    font-weight: 500;
+}
+
+.progress-top .progress-income span {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #0059FF;
+}
+
+.progress-top .progress-income {
+    font-size: 18px;
+}
+
+.progress-top .progress-total {
+    line-height: 48px;
+}
+
+.progress-top  dt {
+    color: #1E2329;
+}
+
+.progress-top  dd {
+    color: #76808F;
+}
+
+#asset h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 34px;
+}
+
+#asset ul {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+#asset ul li {
+    float: left;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#asset ul .on a {
+    background-color: #0059FF;
+    color: #fff;
+}
+
+#asset ul li a {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #0059FF;
+    border-radius: 5px;
+    color: #0059FF;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#asset table {
+    overflow-x: auto;
+    margin: 50px 0 30px;
+}
+
+#asset table thead {
+    border-top: 1px solid #4E4E4E;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+#asset table thead th:nth-child(1) {
+    width: 15%;
+}
+
+#asset table thead th:nth-child(2) {
+    width: 15%;
+}
+
+#asset table thead th:nth-child(3) {
+    width: 15%;
+}
+
+#asset table thead th:nth-child(4) {
+    width: 15%;
+}
+
+#asset table thead th:nth-child(5) {
+    width: 40%;
+}
+
+#asset table thead th {
+    padding: 10px;
+    color: #4E4E4E;
+    font-weight: 600;
+}
+
+#asset table tbody tr {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+#asset table tbody tr td {
+    padding: 15px 10px;
+}
+
+#asset table tbody .coin img {
+    float: left;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#asset table tbody .coin dt {
+    color: #000000;
+    font-size: 12px;
+}
+
+#asset table tbody .coin dd {
+    color: #707A8A;
+    font-size: 12px;
+}
+
+#asset table tbody .available, #asset table tbody .order, #asset table tbody .value {
+    color: #212833;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#asset table tbody .action a {
+    display: inline-block;
+    width: 32%;
+    color: #0059FF;
+    font-weight: 600;
+}
+
+#asset .main-th-page {
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.55);
+	padding: 30px 15px;
+}
+
+#asset .tb-border {
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+#asset .tb-border table thead tr {
+    background-color: #F1F1FF;
+}
+
+#asset .my-table tr td {
+    border: none !important;
+}
+
+#asset .coin button {
+    border: 1px solid #4F4F4F;
+}
+
+#asset .bank-data-img p {
+    color: #5F5F5F;
+}
+
+#cointcNav ul .wallet .active {
+    color: #85C4F9 !important;
+}
+
+#withdrawCrypto {
+    padding: 50px 0;
+}
+
+#withdrawCrypto .main-bg {
+    box-shadow: 0 0 10px 3px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+#withdrawCrypto h4 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.wd-crypto {
+    padding: 10px 0;
+}
+
+#coin {
+    -webkit-appearance: none;
+}
+
+#withdrawCrypto .form-group .select-coin-input .form-control,
+#withdrawCrypto .form-group .address-input .form-control {
+    border: 1px solid #79818F;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+.address-input .form-control{
+    color: #0059FF;
+}
+
+#withdrawCrypto .amount-input .input-group .form-control {
+    border: 1px solid #79818F !important;
+    border-radius: 0 !important;
+    font-size: 13px !important;
+    border-right: none !important;
+}
+
+#withdrawCrypto .amount-input .input-group .input-group-append {
+    border: 1px solid #79818F !important;
+    border-radius: 0 !important;
+    font-size: 13px !important;
+    border-left: none !important;
+}
+
+.amount-input .input-group .input-group-append .input-group-text {
+    border: none !important;
+    padding: 0px 12px;
+    background: none;
+    font-size: 13px;
+}
+
+.amount-input p {
+    font-size: 12px;
+}
+
+.amount-input p span{
+    color: #0059FF;
+}
+
+.form-hr-bottom {
+    border-bottom:1px solid #79818F;
+}
+
+.wd-info .fa-info-circle {
+    color: #471DFF;
+}
+
+.wd-info p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.wd-info ul {
+    padding-left: 20px;
+    list-style: disc !important;
+    font-size: 14px;
+}
+
+.wa-icon label span:nth-child(1)::after {
+    position: absolute;
+    content: "\f059";
+    font-family: 'Font Awesome 5 Free';
+    top: 0;
+    color: #5C59F5;
+}
+
+.deposit-address-img .card{
+    border: none !important;
+}
+
+.deposit-address-img .card .card-body .card-text-p{
+    color: #0059FF;
+}
